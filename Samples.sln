@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicChatWpfMvvm", "BasicCh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicChat.WebForms", "BasicChat.WebForms\BasicChat.WebForms.csproj", "{FF035AEF-404F-48E2-B9E7-F8B89487D071}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicChat.WinForms", "BasicChat.WinForms\BasicChat.WinForms.csproj", "{15510E71-193C-4FF2-AA19-C1F8A0DFF9D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{FF035AEF-404F-48E2-B9E7-F8B89487D071}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF035AEF-404F-48E2-B9E7-F8B89487D071}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF035AEF-404F-48E2-B9E7-F8B89487D071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15510E71-193C-4FF2-AA19-C1F8A0DFF9D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15510E71-193C-4FF2-AA19-C1F8A0DFF9D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15510E71-193C-4FF2-AA19-C1F8A0DFF9D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15510E71-193C-4FF2-AA19-C1F8A0DFF9D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
