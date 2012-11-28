@@ -17,30 +17,22 @@
     </section>
 </asp:Content>
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+
     <input type="text" id="msg" value=" " />
     <input type="button" id="send" value="send" />
-    <asp:UpdatePanel runat="server" ID="messagePanel">
-        <ContentTemplate>
-            <ul>
-                <asp:Repeater runat="server" ID="messages">
-                    <ItemTemplate>
-                        <li>
-                            <%# Eval("Value") %>
-                        </li>
-                    </ItemTemplate>
-                </asp:Repeater>
-            </ul>
-        </ContentTemplate>
-    </asp:UpdatePanel>
+
+    <ul id="message">
+    </ul>
+
 </asp:Content>
 <asp:Content runat="server" ID="ScriptsContent" ContentPlaceHolderID="ScriptContent">
     <script>
         $(function () {
             var chat = $.connection.chat;
 
-            chat.client.send = function () {
-                __doPostBack('<%= messagePanel.UniqueID %>', '');
-            }
+            chat.client.send = function (message) {
+                $('#message').append('<li>' + message + '</li>');
+            };
 
             $.connection.hub.start().done(function () {
                 $('#send').click(function () {
