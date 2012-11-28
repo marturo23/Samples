@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BasicChat.WebForms.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,9 @@ namespace BasicChat.WebForms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            var messageList = ChatDb.GetAll();
+            messages.DataSource = messageList;
+            messages.DataBind();
         }
     }
 }
