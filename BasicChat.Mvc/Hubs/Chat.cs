@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Microsoft.AspNet.SignalR.Hubs;
-using BasicChat.WebForms.Models;
 
 namespace BasicChat.Mvc
 {
@@ -11,7 +10,6 @@ namespace BasicChat.Mvc
     {
         public void Send(string message)
         {
-            ChatDb.Add(message);
             Clients.All.send(message);
         }
     }
